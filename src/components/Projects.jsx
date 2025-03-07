@@ -75,7 +75,7 @@ const Projects = () => {
                 <li>NLTK</li>
                 <li>Flask</li>
             </ul>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo voluptatibus, eius voluptatum asperiores cumque nostrum.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo voluptatibus, testing achraf halzoun idriss ahmed maher</p>
             <button>see more</button>
         </div>
       </div>
