@@ -1,0 +1,343 @@
+@import url('https://fonts.googleapis.com/css2?family=Merienda:wght@300..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Italiana&family=Merienda:wght@300..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", serif;
+
+}
+
+body{
+  background-color: #ece7e1;
+}
+ul{
+  list-style: none;
+}
+a{
+  color: #000;
+  text-decoration: none;
+}
+::selection{
+  background-color: #000;
+  color: #fff;
+}
+.home{
+  display: grid;
+  grid-template-columns: .6fr 2.5fr 6fr;
+  gap: 10px;
+  height: 100svh;
+  overflow: hidden;
+}
+.home > div {
+  padding: 10px;
+  padding-bottom: 150px;
+}
+.span2{
+  display: flex;
+  align-items: flex-end;
+  gap: 10px;
+  padding-left: 45px !important;
+  padding-bottom: 250px !important;
+}
+.span2 .nameHolder{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.span2 .nameHolder h4{
+  font-weight: 500;
+  text-transform: uppercase;
+  font-size: 15px;
+  letter-spacing: 2px;
+  line-height: .9;
+}
+.span2 .nameHolder p{
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 1.9em;
+  max-width: 90%;
+}
+
+.span3{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.span3 ul{
+  display: flex;
+  flex-direction: column;
+  gap: 0px;
+  width: 100%;
+
+}
+.span3 ul li a{
+  color: #000;
+  text-align: left;
+  text-transform: uppercase;
+  border: 0 solid #000;
+  font-family: "Italiana", serif;
+  font-size: 11vw;
+  font-weight: 300;
+  line-height: .95em;
+  text-decoration: none;
+  transition: transform .3s ease-in-out, color .3s ease-in-out, font-size .3s ease-in-out;
+  display: block;
+  position: relative;
+  transition: 100ms ease-in-out;
+
+}
+.span3 ul li a:hover{
+  font-style: italic;
+  padding-left: 5px;
+}
+.span1{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 85px !important;
+}
+.span3{
+  padding-top: 85px !important;
+}
+.span1 ul li,
+.span1 p{
+  rotate: -90deg !important;
+}
+.span1 ul {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.span1Bottom p,
+.span1 ul li a {
+  font-size: 13px;
+}
+.span1 ul li a:hover{
+  text-decoration: line-through;
+}
+.span1Top{
+  position: relative;
+}
+.span1Top::after{
+  content: "";
+  position: absolute;
+  width: .3px;
+  height: 100px;
+  background-color: #000;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 160%;
+}
+.sideBar .span1Top::after{
+  top: 60px;
+}
+.projects {
+  padding: 25px;
+}
+.project_holder{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 15px ;
+
+}
+.projectBox {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.projectBox img{
+  width: 100%;
+  aspect-ratio: 2/0.55;
+  object-fit: cover;
+  border-radius: 8px;
+}
+.projectBox ul {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.projectBox ul li{
+  background-color: #c4c5e78c;
+  color: #3d44ff;
+  padding: 4px 5px;
+  border-radius: 4px;
+}
+.projectBox button{
+  width: fit-content;
+  padding: 0;
+  background-color: transparent;
+  color: #3d44ff;
+  outline: 0;
+  border: 0;
+  font-size: 17px;
+  font-weight: 500;
+  cursor: pointer;
+  text-transform: capitalize;
+}
+.contact,
+.projects{
+  height: 100svh;
+  display: grid;
+  grid-template-columns: 120px 1fr;
+  gap: 15px;
+}
+.sideBar{
+  display: flex;
+  justify-content: center;
+}
+.sideBar .span1{
+  padding-top: 20px !important;
+}
+.sideBar .span1Bottom{
+  margin-bottom: 40px;
+}
+.contact_holder {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding-bottom: 250px;
+  padding-left: 120px;
+  gap: 15px;
+  width: 50%;
+}
+.contact_holder .wlc h1 {
+  font-size: 14svw;
+  font-family: "Italiana", serif;
+  letter-spacing: 3px;
+}
+.contact_holder .wlc p{
+  width: 80%;
+  font-weight: 300;
+  line-height: 1.6;
+  font-size: 15px;
+}
+.contact_down a{
+  text-decoration: underline;
+}
+.contact_down a:hover{
+  text-decoration: line-through;
+}
+.contact_down p,
+.contact_down ul{
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-weight: 300;
+  line-height: 1.6;
+  font-size: 15px;
+}
+.contact{
+  background-color: #1a1818;
+  padding: 30px 15px;
+  color: #ece7e1;
+}
+.contact  * {
+  color: #ece7e1 !important;
+}
+.contact .span1Top::after {
+  background-color: #ece7e1 !important;
+}
+.content{
+  padding-top: 130px;
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+}
+.content h2{
+  font-size: 16svw;
+  line-height: 0.8;
+  font-family: "Italiana", serif;
+  font-weight: 300;
+
+}
+.content h4{
+  font-size: 3svw;
+  font-family: "Italiana", serif;
+  font-weight: 100;
+  width: 77%;
+
+}
+.content p{
+  font-size: 15px;
+  font-weight: 300;
+  line-height: 2;
+  width: 77%;
+}
+.content span{
+  font-size: 34px;
+  font-family: "Italiana", serif;
+  font-weight: 100;
+  text-transform: uppercase;
+}
+.content a{
+  width: fit-content;
+  padding: 15px 60px;
+  border-radius: 40px;
+  border: 0;
+  outline: 0;
+  background-color: #000;
+  color: #fff;
+  font-family: "Italiana", serif;
+  font-weight: 600;
+  font-size: 30px;
+  text-transform: capitalize;
+  transition: 450ms ease-in-out;
+  cursor: pointer;
+
+}
+.content a:hover{
+  padding: 15px 120px;
+}
+.about{
+  display: grid;
+  grid-template-columns: 4fr 3fr;
+  padding: 80px 180px;
+}
+.about_container{
+  display: grid;
+    grid-template-columns: 120px auto;
+    gap: 10px;
+    overflow: hidden;
+}
+.about_container .span1{
+  padding-top: 120px !important;
+  height: 100svh !important;
+}
+.image img{
+  width: 500px;
+  aspect-ratio: 1/1.2;
+  object-fit: cover;
+}
+.certifs{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+  padding: 25px;
+}
+.certif_box{
+  padding: 40px;
+  border: 1px solid #0000003f;
+  border-radius: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.certif_box .innerCertifImg{
+  width: 100%;
+  aspect-ratio: 1/1;
+  border-radius: inherit;
+  background-color: #00000009;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.certif_box .innerCertifImg img{
+  width: 400px;
+}
+.certif_box h3{
+  text-align: center;
+  text-transform: capitalize;
+  font-size: 30px;
+}
