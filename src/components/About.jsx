@@ -1,6 +1,6 @@
 import SideBar from "./SideBar";
 import PicProfil from "../assets/achraf1.jpg";
-import CV from '../assets/CV.pdf'
+import CV from '../assets/CV DS.pdf'
 const About = () => {
 
   return (
@@ -48,7 +48,7 @@ const About = () => {
           MySQL | MongoDB | PostgreSQL | SQLite3 | Hadoop <br />
           Visualization :<br />
           PowerBI | Seaborn | Matplotlib <br />
-          Versionnement and DevOps :<br />
+          Versioning and DevOps :<br />
           Git | Github | Docker <br />
           Agile Methodology :<br />
           SCRUM <br />
